@@ -56,6 +56,26 @@ pasv_address=<your-public-ip-or-host>
 
 …and publish the same range with `-p`.
 
+## Logging
+
+The image symlinks `/var/log/vsftpd.log` and `/var/log/xferlog` to `/dev/stdout`, so anything vsftpd logs is visible via `docker logs <container>`. To actually get verbose output, enable it in your conf:
+
+```
+syslog_enable=NO
+xferlog_enable=YES
+xferlog_std_format=NO
+log_ftp_protocol=YES
+dual_log_enable=YES
+vsftpd_log_file=/var/log/vsftpd.log
+xferlog_file=/var/log/xferlog
+```
+
+- `syslog_enable=NO` — keep file-based logging (the image's symlinks rely on this).
+- `xferlog_enable=YES` + `log_ftp_protocol=YES` — log every FTP command and response.
+- `dual_log_enable=YES` with `xferlog_std_format=NO` — writes vsftpd's verbose format to `vsftpd_log_file` and xferlog format to `xferlog_file` simultaneously.
+
+If you set `vsftpd_log_file` / `xferlog_file` to non-default paths, the symlinks won't apply — either keep the defaults or symlink your custom paths to `/dev/stdout` yourself (e.g. via a bind-mount).
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
