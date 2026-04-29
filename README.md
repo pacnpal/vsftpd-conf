@@ -1,16 +1,8 @@
 # vsftpd-conf
 
-[![GitHub Repo](https://img.shields.io/badge/GitHub-pacnpal%2Fvsftpd--conf-181717?logo=github&logoColor=white)](https://github.com/pacnpal/vsftpd-conf)
-[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-pacnpal%2Fvsftpd--conf-2496ED?logo=docker&logoColor=white)](https://hub.docker.com/r/pacnpal/vsftpd-conf)
-[![GHCR](https://img.shields.io/badge/GHCR-pacnpal%2Fvsftpd--conf-181717?logo=github&logoColor=white)](https://github.com/pacnpal/vsftpd-conf/pkgs/container/vsftpd-conf)
-[![Build and Push Docker Image](https://github.com/pacnpal/vsftpd-conf/actions/workflows/build.yml/badge.svg)](https://github.com/pacnpal/vsftpd-conf/actions/workflows/build.yml)
-[![Docker Pulls](https://img.shields.io/docker/pulls/pacnpal/vsftpd-conf?logo=docker&logoColor=white)](https://hub.docker.com/r/pacnpal/vsftpd-conf)
-[![Docker Image Size](https://img.shields.io/docker/image-size/pacnpal/vsftpd-conf/latest?logo=docker&logoColor=white)](https://hub.docker.com/r/pacnpal/vsftpd-conf/tags)
-[![Docker Image Version](https://img.shields.io/docker/v/pacnpal/vsftpd-conf?sort=semver&logo=docker&logoColor=white)](https://hub.docker.com/r/pacnpal/vsftpd-conf/tags)
-[![GitHub Release](https://img.shields.io/github/v/release/pacnpal/vsftpd-conf?logo=github&logoColor=white)](https://github.com/pacnpal/vsftpd-conf/releases)
-[![Platforms](https://img.shields.io/badge/platforms-linux%2Famd64%20%7C%20linux%2Farm64-blue?logo=linux&logoColor=white)](https://github.com/pacnpal/vsftpd-conf/pkgs/container/vsftpd-conf)
-[![License: MIT](https://img.shields.io/github/license/pacnpal/vsftpd-conf?color=blue)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/pacnpal/vsftpd-conf?style=social)](https://github.com/pacnpal/vsftpd-conf/stargazers)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-pacnpal%2Fvsftpd--conf-181717?logo=github&logoColor=white)](https://github.com/pacnpal/vsftpd-conf) [![Docker Hub](https://img.shields.io/badge/Docker%20Hub-pacnpal%2Fvsftpd--conf-2496ED?logo=docker&logoColor=white)](https://hub.docker.com/r/pacnpal/vsftpd-conf) [![GHCR](https://img.shields.io/badge/GHCR-pacnpal%2Fvsftpd--conf-181717?logo=github&logoColor=white)](https://github.com/pacnpal/vsftpd-conf/pkgs/container/vsftpd-conf) [![GitHub Stars](https://img.shields.io/github/stars/pacnpal/vsftpd-conf?style=social)](https://github.com/pacnpal/vsftpd-conf/stargazers)
+[![Build and Push Docker Image](https://github.com/pacnpal/vsftpd-conf/actions/workflows/build.yml/badge.svg)](https://github.com/pacnpal/vsftpd-conf/actions/workflows/build.yml) [![Docker Image Version](https://img.shields.io/docker/v/pacnpal/vsftpd-conf?sort=semver&logo=docker&logoColor=white)](https://hub.docker.com/r/pacnpal/vsftpd-conf/tags) [![GitHub Release](https://img.shields.io/github/v/release/pacnpal/vsftpd-conf?logo=github&logoColor=white)](https://github.com/pacnpal/vsftpd-conf/releases)
+[![Docker Pulls](https://img.shields.io/docker/pulls/pacnpal/vsftpd-conf?logo=docker&logoColor=white)](https://hub.docker.com/r/pacnpal/vsftpd-conf) [![Docker Image Size](https://img.shields.io/docker/image-size/pacnpal/vsftpd-conf/latest?logo=docker&logoColor=white)](https://hub.docker.com/r/pacnpal/vsftpd-conf/tags) [![Platforms](https://img.shields.io/badge/platforms-linux%2Famd64%20%7C%20linux%2Farm64-blue?logo=linux&logoColor=white)](https://github.com/pacnpal/vsftpd-conf/pkgs/container/vsftpd-conf) [![License: MIT](https://img.shields.io/github/license/pacnpal/vsftpd-conf?color=blue)](LICENSE)
 
 Minimal Docker image for [vsftpd](https://security.appspot.com/vsftpd.html) that reads its configuration from a bind-mounted file. No entrypoint script, no environment variable handling, no baked-in users. The conf is the source of truth.
 
